@@ -1,10 +1,10 @@
 package com.example.abhi.buttonlayoutdesign;
 
-public class Data {
+public class DaysData {
     private String btname;
     private int btnId;
 
-    Data(String name, int btnId) {
+    DaysData(String name, int btnId) {
         btname = name;
         this.btnId = btnId;
     }

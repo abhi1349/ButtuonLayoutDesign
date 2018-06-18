@@ -7,27 +7,23 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
-import android.widget.ImageButton;
-import android.widget.ImageView;
-import android.widget.TextView;
 import android.widget.Toast;
 
-import java.util.Collections;
 import java.util.List;
 
-public class Recycler_View_Adapter extends RecyclerView.Adapter<Recycler_View_Adapter.View_Holder> {
+public class DaysDataAdapter extends RecyclerView.Adapter<DaysDataAdapter.View_Holder> {
 
-    List<Data> list;
+    List<DaysData> list;
     Context context;
 
-    public Recycler_View_Adapter(List<Data> list, Context context) {
+    public DaysDataAdapter(List<DaysData> list, Context context) {
         this.list = list;
         this.context = context;
     }
 
     @Override
     public View_Holder onCreateViewHolder(ViewGroup parent, int viewType) {
-        View v = LayoutInflater.from(parent.getContext()).inflate(R.layout.row_layout, parent, false);
+        View v = LayoutInflater.from(parent.getContext()).inflate(R.layout.days_row_layout, parent, false);
         View_Holder holder = new View_Holder(v);
         return holder;
     }
